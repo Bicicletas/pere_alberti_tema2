@@ -251,6 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f681b6236da3c84ead1e8a2418f7827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: "\xA1Brum, brum, brum!"
 --- !u!65 &289705393
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1307,6 +1308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f681b6236da3c84ead1e8a2418f7827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: "\xA1Nino, nino!"
 --- !u!65 &2122960643
 BoxCollider:
   m_ObjectHideFlags: 0
