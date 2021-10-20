@@ -332,6 +332,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAge: 35
+  x: 2
+  y: 5
 --- !u!65 &2110056676
 BoxCollider:
   m_ObjectHideFlags: 0

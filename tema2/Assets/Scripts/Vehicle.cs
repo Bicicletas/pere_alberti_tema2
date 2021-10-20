@@ -10,9 +10,14 @@ public class Vehicle : MonoBehaviour
     [SerializeField] private string name;
     // Variable que guarda el numero de ruedas
     [SerializeField] private int numberWheels = 4;
-    // Variable que guarda si el vehiculo tiene sirena
+    // Variable que indica si el vehiculo tiene sirena
     [SerializeField] private bool hasSiren = false;
+    // Variable que indica si el vehiculo esta en marcha
     [SerializeField] private bool isOn = true;
+    // Variable que guarda la cantidad de gasolina que tinene los vehiculos
+    [SerializeField] private float gasoline;
+
+
 
 
 
@@ -39,12 +44,25 @@ public class Vehicle : MonoBehaviour
         if (isOn)
         {
             Debug.Log($"{sound}");
-        }else if (isOn == false)
+        }else if (hasSiren == true)
         {
-            Debug.Log($"{name} hara {sound}");
+            Debug.Log($"{name} hara {sound} cunado se ponga en marcha");
         }else
         {
-            Debug.Log($"{sound} no esta en marcha");
+            Debug.Log($"{name} no esta en marcha");
+        }
+
+        if (gasoline < 10 && isOn == true)
+        {
+            Debug.Log($"¡A {name} le queda poca gasolina");
+            if (hasSiren)
+            {
+                Debug.Log($"sound");
+            }
+            else
+            {
+                Debug.Log($"{name} no tiene sirena");
+            }
         }
 
     }

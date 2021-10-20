@@ -15,33 +15,52 @@ public class MyFirstScript : MonoBehaviour
 
     public float a = 5f;
     public float b = 2f;
+    
+    public int playerAge = 35;
+
+    public int x = 5;
+    public int y = 2;
+    */
 
     public bool isRaining = false;
-   */
 
-    public int playerAge = 35;
+    public bool isCold;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
+
+        if (isRaining)
+        {
+            if (isCold == true)
+            {
+                Debug.Log("Lleva paraguas y sudadera");
+            }else
+            {
+                Debug.Log("Lleva paraguas");
+            }
+        }
+        else
+        {
+            if (isCold == true)
+            {
+                Debug.Log("Lleva sudadera");
+            }
+            else
+            {
+                Debug.Log("Disfruta del dia");
+            }
+        }
+
         /*
         Debug.Log($"Suma: {x} + {y} = {x + y}"); 
         Debug.Log("Resta: " + x + " - " + y + " = " + (x - y));
         Debug.Log(string.Format("Producto: {0} * {1} = {2}", x, y, x * y));
         Debug.Log(string.Format("Division: {0} / {1} = {2}", x, y, x / y));
 
-        if (isRaining)
-        {
-            Debug.Log("Lleva paraguas");
-        }
-        else 
-        {
-            Debug.Log("No llueve. No lleves paraguas");
-        }
-       */
-
-        if (playerAge >= 18)
+         if (playerAge >= 18)
         {
             Debug.Log("Eres mayor de edad");
         }
@@ -53,6 +72,19 @@ public class MyFirstScript : MonoBehaviour
         {
             Debug.Log("Eres un niño");
         }
+
+        if (x == 2 || y <= 5)
+        {
+            Debug.Log("Verdadero");
+        }
+        else
+        {
+            Debug.Log("Falso");
+        }
+       */
+
+
+
 
     }
 

@@ -255,7 +255,8 @@ MonoBehaviour:
   name: Coche
   numberWheels: 4
   hasSiren: 0
-  isOn: 1
+  isOn: 0
+  gasoline: 8.25
 --- !u!65 &289705393
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1317,6 +1318,7 @@ MonoBehaviour:
   numberWheels: 4
   hasSiren: 1
   isOn: 1
+  gasoline: 49.75
 --- !u!65 &2122960643
 BoxCollider:
   m_ObjectHideFlags: 0
