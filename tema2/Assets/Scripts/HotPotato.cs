@@ -5,6 +5,7 @@ using UnityEngine;
 public class HotPotato : MonoBehaviour
 {
     private int counter;
+    public Color colorMat;
 
     // Start is called before the first frame update
     void Start()
@@ -20,12 +21,15 @@ public class HotPotato : MonoBehaviour
 
     private void OnMouseDown()
     {
-        transform.localScale += 2 * Vector3.one;
+        colorMat = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
+        GetComponent<MeshRenderer>().material.color = colorMat;
+        //transform.localScale += 2 * Vector3.one;
         counter--;
-
+        /*
         if (counter <= 0)
         {
             Destroy(gameObject);
         }
+        */
     }
 }
